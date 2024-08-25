@@ -7,13 +7,11 @@ namespace MatchMakingServer.Controller;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CreateRoomHandler : ControllerBase
+public class FindRoomController : ControllerBase
 {
     [HttpPost]
-    public async Task<CreateRoomResponseParams> Post([FromBody] CreateRoomRequestParams requestParams)
+    public async Task<FindRoomResponseParamas> Post([FromBody] FindRoomRequestParams requestParams)
     {
-        // todo
-
-        return new CreateRoomResponseParams();
+        return new FindRoomResponseParamas();
     }
 }

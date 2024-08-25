@@ -6,13 +6,13 @@ namespace MatchMakingServer.Controller;
 
 [ApiController]
 [Route("api/[controller]")]
-public class InsideRoomController : ControllerBase
+public class GetRoomListController : ControllerBase
 {
 
     [HttpPost]
-    public async Task<InsideRoomResponseParams> Post([FromBody] InsideRoomRequestParams requestParams)
+    public async Task<GetRoomListResponseParams> Post([FromBody] GetRoomListRequestParams requestParams)
     {
 
-        return new InsideRoomResponseParams();
+        return new GetRoomListResponseParams();
     }
 }
